@@ -1,8 +1,8 @@
-function fn(...c) {
+function addOrError(...c) {
     if (!c.every((a) => Number.isNumber(a)))
       throw "All arguments must be numbers.";
     return c.reduce((a, b) => a + b);
   }
   
-  fn(1, 2, 3); //> 6
-  fn(10, "B", 20); //> error All arguments must be numbers.
+  addOrError(1, 2, 3); //> 6
+  addOrError(10, "B", 20); //> error All arguments must be numbers.
