@@ -10,3 +10,6 @@ function addOrError(...c) {
   addOrError(1, 2, 3); //> 6
   addOrError(10, "B", 20); //> error All arguments must be numbers.
 
+
+  //We did it!
+
